@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero-section {
+  background: url("https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png")
+    50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.nav {
+  padding: 15px;
+  height: 80px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+.logo-image {
+  height: 30px;
+}
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.form-section {
+  margin: 20px;
+}
+
+.main-content {
+  margin: 20px;
+}
+
+aside > .form-output {
+  width: 50%;
+  padding-left: 15px;
+  float: right;
+}
+
+.message-form {
+  width: 48%;
+  float: left;
+}
+
+.kotak {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.form-output {
+  background-color: #d8d8d8;
+  margin: 10px;
+}
+
+.headquarter {
+  margin: 20px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.bulat {
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .hero-section {
+    background: url("https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png")
+      50% no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    margin-top: 30px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .message-form {
+    width: 100%;
+  }
+
+  aside > .form-output {
+    width: 100%;
+    float: left;
+  }
+}
